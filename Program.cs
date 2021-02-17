@@ -12,6 +12,9 @@ namespace net23
             var drver = new ChromeDriver("./chromedriver");
             WebDriverWait wait= new WebDriverWait(drver,TimeSpan.FromSeconds(12));
             drver.Url ="https://images.google.com/?gws_rd=ssl";
+            
+            drver.FindElement(By.XPath("//*[@id='sbtc']/div/div[3]/div[2]/span"))
+                .Click();
             Console.WriteLine("Hello World!");
         }
     }
