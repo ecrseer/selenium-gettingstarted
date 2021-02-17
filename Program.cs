@@ -11,6 +11,7 @@ namespace net23
         {
             var drver = new ChromeDriver("./chromedriver");
             WebDriverWait wait= new WebDriverWait(drver,TimeSpan.FromSeconds(12));
+            drver.Url ="https://images.google.com/?gws_rd=ssl";
             Console.WriteLine("Hello World!");
         }
     }
